@@ -84,23 +84,24 @@ h1 {
   color: #FFF;
 }
 
-input[type=button], button {
+input[type=button] {
+  width: 100px;
   padding: 5px;
   border-radius: 50px;
   font-size: 1.2rem;
   color: #FFF;
-  background-color: #E97777;
+  background-color: #F49D1A;
 }
 
-input[type=text], .color-input {
+select {
   width: 200px;
   padding: 5px;
   border-radius: 5px;
   text-align: center;
   font-size: 1.2rem;
   font-weight: 800;
-  color: #000;
-  background-color: #F2F4F9;
+  color: #FFF;
+  background-color: rgba(0,0,0,0.5);
 }
 
 .color-input {

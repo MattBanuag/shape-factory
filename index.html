@@ -24,16 +24,19 @@
             <div class="app-container">
                 <h1>Shape Factory</h1>
                 <form>
-                    <input type="text" placeholder="Shape" class="shape-input">
-                    <input list="colors" placeholder="Color" class="color-input">
-                    <datalist id="colors">
-                        <option value="blue">Blue</option>
-                        <option value="green">Green</option>
-                        <option value="orange">Orange</option>
-                        <option value="pink">Pink</option>
-                        <option value="purple">Purple</option>
-                    </datalist>
-                    <input type="button" value="Create">
+                    <select id="shape-input">
+                        <option class="shapes" value="circle">Circle</option>
+                        <option class="shapes" value="square">Square</option>
+                    </select>
+
+                    <select id="color-input">
+                        <option class="color" value="blue">Blue</option>
+                        <option class="color" value="green">Green</option>
+                        <option class="color" value="orange">Orange</option>
+                        <option class="color" value="pink">Pink</option>
+                        <option class="color" value="purple">Purple</option>
+                    </select>
+                    <input type="button" value="Create" class="create-btn">
                 </form>
 
                 <div class="shapes-container">
