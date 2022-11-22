@@ -10,11 +10,12 @@ const shapesContainer = document.querySelector('.shapes-container');
 const elementContainer = document.querySelector('.element-container');
 
 const shapeArray = [];
-
+let count = 0;
 createBtn.addEventListener('click', () => {
     const shapes = new Shape (
         shape.value, 
-        color.value
+        color.value,
+        count
     );
 
     function createShape() {
@@ -60,6 +61,7 @@ createBtn.addEventListener('click', () => {
 
     createShape();
     console.log(shapeArray);
+    ++count;
 });
 
 
