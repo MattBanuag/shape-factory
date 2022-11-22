@@ -18,16 +18,21 @@
 }
 
 .shapes-container {
-    width: 45rem;
-    height: 45rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+    width: 600px;
+    height: 800px;
+    padding: 10px;
     background-color: rgba(0,0,0,0.5);
 }
 
 /* = = = = = = = = = = = = = = = = = = */
 /* SHAPES                              */
 /* = = = = = = = = = = = = = = = = = = */
-.shape {
-    width: 100px;
-    height: 100px;
-    background-color: red;
+.shapes-container div {
+    cursor: pointer;
 }
+
+

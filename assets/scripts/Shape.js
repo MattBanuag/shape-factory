@@ -2,14 +2,13 @@
 
 class Shape {
     constructor(name, colour) {
-        this.name = name;
-        this.colour = colour;
+        this._name = name;
+        this._colour = colour;
     }
 
     get info() {
-        return `Shape: ${this.name}, Colour: ${this.colour}`;
+        return `Shape: ${this._name}, Colour: ${this._colour}`;
     }
-    
 };
 
 export {Shape};
