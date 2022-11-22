@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+/*
+  BROWSER STYLES RESET
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  color: #FFF;
+  outline: none;
+  border-style: none;
+  vertical-align: baseline;
+}
+
+html {
+  height: 100%;
+  font-family: "Nunito", "Open Sans", Arial, sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+  line-height: 1.5;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  height: 100%;
+  background-color: #16213E;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+li, a, i, figure, img, button,
+input[type=button], input[type=submit] {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+input, textarea, button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+input[type=button], input[type=submit], input[type=clear], input[type=radio], button, a {
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*-------------------------------------------*/
+/* BASIC ELEMENT STYLES                      */
+/*-------------------------------------------*/
+h1 {
+  font-size: 8rem;
+  color: #DC3535;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+input[type=button], button {
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  color: #FFF;
+  background-color: #3CCF4E;
+}
+
+button {
+  position: fixed;
+  top: 11%;
+  width: 50%;
+  background-color: #DC3535;
+}
+
+input[type=text] {
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #000;
+  background-color: #F2F4F9;
+}
+
