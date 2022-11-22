@@ -1,0 +1,24 @@
+@import './reset.css';
+/* = = = = = = = = = = = = = = = = = = */
+/* WRAPPER & CONTAINERS                */
+/* = = = = = = = = = = = = = = = = = = */
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.shapes-container {
+    width: 45rem;
+    height: 45rem;
+    background-color: rgba(0,0,0,0.5);
+}
