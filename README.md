@@ -1,4 +1,4 @@
-# Alarm Clock
+# Shape Factory
 Shape factory with HTML, CSS and OOP JavaScript.
 
 ### Languages
