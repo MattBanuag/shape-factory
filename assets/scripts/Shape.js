@@ -8,7 +8,7 @@ class Shape {
     }
 
     get info() {
-        return `Index ${this._item}, ${this._colour} ${this._name}`;
+        return `Shape ${this._item}, ${this._colour} - ${this._name}`;
     }
 };
 
