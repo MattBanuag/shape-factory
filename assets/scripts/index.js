@@ -13,16 +13,18 @@ const shapeInfoContainer = document.querySelector('.shape-info-container');
 const shapeArray = [];
 let count = 0;
 
+// CREATING SHAPES EVENT LISTENER
 createBtn.addEventListener('click', () => {
     const shapes = new Shape (shape.value, color.value, count);
 
+    // SHAPE CREATION FUNCTION
     function createShape() {
         let div = document.createElement("div");
         div.classList.add('shape-item');
         
         shapeArray.push(shapes.info);
 
-        // GETTING INDEX
+        // GETTING SHAPE INFORMATION
         div.addEventListener('click', () => {
             shapeInfoContainer.innerHTML = `<p>${shapes.info}</p>`;
         });        
