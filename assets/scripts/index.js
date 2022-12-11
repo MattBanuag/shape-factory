@@ -1,22 +1,20 @@
 import {Shape} from "./Shape.js";
 
-// Bridge to HTML
+// BRIDGE TO HTML
+// Shapes and Color Input
 const shape = document.getElementById('shape-input');
 const color = document.getElementById('color-input');
-const options = document.querySelectorAll('option');
 
+// Button and Containers
 const createBtn = document.querySelector('.create-btn');
 const shapesContainer = document.querySelector('.shapes-container');
 const elementContainer = document.querySelector('.element-container');
 
 const shapeArray = [];
 let count = 0;
+
 createBtn.addEventListener('click', () => {
-    const shapes = new Shape (
-        shape.value, 
-        color.value,
-        count
-    );
+    const shapes = new Shape (shape.value, color.value, count);
 
     function createShape() {
         let div = document.createElement("div");
