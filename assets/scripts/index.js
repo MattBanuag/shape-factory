@@ -8,7 +8,7 @@ const color = document.getElementById('color-input');
 // Button and Containers
 const createBtn = document.querySelector('.create-btn');
 const shapesContainer = document.querySelector('.shapes-container');
-const elementContainer = document.querySelector('.element-container');
+const shapeInfoContainer = document.querySelector('.shape-info-container');
 
 const shapeArray = [];
 let count = 0;
@@ -24,7 +24,7 @@ createBtn.addEventListener('click', () => {
 
         // GETTING INDEX
         div.addEventListener('click', () => {
-            elementContainer.innerHTML = `<p>${shapes.info}</p>`;
+            shapeInfoContainer.innerHTML = `<p>${shapes.info}</p>`;
         });        
 
         // VALIDATION
